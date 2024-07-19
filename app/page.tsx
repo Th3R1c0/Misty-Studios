@@ -22,6 +22,7 @@ import { Button } from '@/components/ui/button';
 import Hero from '@/components/hero';
 import Balancer from 'react-wrap-balancer';
 import MagicHoverCard from '@/components/magicalcard';
+import Beam from '@/components/beam';
 
 const Contactus = () => {
   return (
@@ -149,7 +150,7 @@ const Conditions = () => {
         >
           {conditions.map((condition, index) => (
             <MagicHoverCard key={index}>
-              <div className="flex text-center p-4 items-center flex-col justify-center space-y-4">
+              <div className="flex text-center p-8 items-center flex-col justify-center space-y-4">
                 <div className="flex flex-col  text-center items-center">
                   <div>{condition.icon}</div>
                   <h3 className="text-xl font-bold">{condition.title}</h3>
@@ -168,7 +169,7 @@ const Conditions = () => {
 
 const Proccess = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -183,6 +184,7 @@ const Proccess = () => {
               your business needs and resonates with your target customers.
             </p>
           </div>
+          <Beam />
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="grid gap-1">

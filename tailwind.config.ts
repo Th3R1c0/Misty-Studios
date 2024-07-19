@@ -63,6 +63,10 @@ const config = {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
+        beamMask: {
+          from: { x: "-100%" },
+          to: { x: "100%" },
+        },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
@@ -71,7 +75,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        beamMask: "beamMask 1s linear infinite",
       },
+
     },
   },
   plugins: [require("tailwindcss-animate")],
